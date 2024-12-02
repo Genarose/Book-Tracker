@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+   
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+          
+        <img src="ifsulogo.png" alt="Library Logo">
+        <h4>IFSU Library</h4>
+    
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+      
+        <div class="dropdown">
+            <button class="dropbtn">Manage Resources</button>
+            <div class="dropdown-content">
+                <a href="#add-resources">Add Resources</a>
+                <a href="#view-resources">View Resources</a>
+                <a href="#manage-inventory">Manage Inventory</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Manage Client</button>
+            <div class="dropdown-content">
+                <a href="#user-request">Client list</a>
+                <a href="#view-clients">Client Activity</a>
+            </div>
+        </div>
+        <a href="#returned-books">Book Request</a>
+        <a href="#returned-books">Returned Books</a>
+        <a href="#set-fines">Set-Up Fines</a>
+        <a href="#set-fines">Logout</a>
+    </div>
+
+    <!-- Profile and Notifications -->
+    <div class="profile-section">
+        <div class="notifications">
+            <span class="bell-icon">&#128276;</span> <!-- Bell icon for notifications -->
+            <span class="count">3</span> <!-- Notification count -->
+        </div>
+        
+        <div class="profile">
+            <span>Welcome, Name</span> <!-- Placeholder for librarian name -->
+          
+        </div>
+    </div>
+</div>
+
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Add Books Section -->
+        <section id="add-book">
+            <div class="add-book-form">
+                <h2>Add Resources</h2>
+                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" enctype="multipart/form-data">
+                    <label for="book_id">Authentication No. </label>
+                    <input type="text" id="book_id" name="book_id" placeholder="Enter Book ID" required>
+
+                    <label for="book_title">Book Title</label>
+                    <input type="text" id="book_title" name="book_title" placeholder="Enter Book Title" required>
+
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" placeholder="Enter Author Name" required>
+
+                    <label for="isbn">ISBN</label>
+                    <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN" required>
+
+                    <label for="publication_year">Publication Year</label>
+                    <input type="number" id="publication_year" name="publication_year" placeholder="Enter Publication Year" required>
+
+                    <label for="genre">Genre</label>
+                    <input type="text" id="genre" name="genre" placeholder="Enter Genre" required>
+
+                    <label for="resource_type">Resource Status</label>
+                    <select id="status" name="status" required>
+                        <option value="">Select Status Type</option>
+                        <option value="Available">Available</option>
+                        <option value="Checked_Out">Library only</option>
+                       
+                    </select>
+
+                    <label for="shelf_location">Shelf Location</label>
+                    <input type="text" id="shelf_location" name="shelf_location" placeholder="Enter Shelf Location" required>
+
+                    <label for="resource_type">Resource Type</label>
+                    <select id="resource_type" name="resource_type" required>
+                        <option value="">Select Resource Type</option>
+                        <option value="Book">Book</option>
+                        <option value="Magazine">Magazine</option>
+                        <option value="Journal">Journal</option>
+                    </select>
+
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" placeholder="Enter Book Description" required></textarea>
+
+                    <label for="cover">Upload Cover</label>
+                    <input type="file" id="cover" name="cover" accept="image/*" required>
+
+                    <button type="submit">Add Book</button>
+                </form>
+
+               
+            </div>
+        </section>
+    </div>
+
+
+</body>
+</html>
