@@ -72,7 +72,7 @@
 
 /* Title section */
 .title {
-    background-color: #66bb6a;
+    background-color: #6671bb;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -146,7 +146,7 @@
     margin-right: 15px;
 }
 .navbar h4 {
-    color: #095809;
+    color: #5066a3;
     margin-right: 30px;
     margin-left: -55px;
 }
@@ -179,7 +179,7 @@
 
 /* Add Book Button */
 .add-book-form button {
-    background-color: #4caf50;
+    background-color: #2a3b87;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -190,7 +190,7 @@
 }
 
 .add-book-form button:hover {
-    background-color: #45a049;
+    background-color: #354083;
     transform: scale(1.05);
 }
 
