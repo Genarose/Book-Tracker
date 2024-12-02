@@ -10,7 +10,7 @@
 
 /* Header styles */
 .navbar {
-    background-color: #2e7d32; /* Green theme */
+    background-color: #5376c0; /* Green theme */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@
 }
 
 .navbar a:hover {
-    background-color: #1b5e20;
+    background-color: #33a2c7;
 }
 
 /* Dropdown styles */
@@ -38,7 +38,7 @@
 }
 
 .dropbtn {
-    color: white;
+    color: rgb(187, 216, 242);
     padding: 14px 20px;
     background-color: inherit;
     border: none;
